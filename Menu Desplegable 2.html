@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Menu Desplegable 2</title>
+</head>
+
+<body>
+ <tittle>Menu</tittle>
+        <style type="text/css">
+
+        *{
+            padding:0px;
+            margin:0px;
+
+
+}   
+    
+    #header{
+      margin:auto;
+      width:500px;
+      font-family:arial, Helvetica, sans-serif
+    }
+    ul, ol{
+        list-style:none;
+    }
+    .nav li a{
+        background-color:#00FFFF;
+        color:#006600;
+        text-decoration:none;
+        padding:20px 30px;
+        display:block;
+    }
+    
+    .nav li a:hover{
+        background-color:#00FF00;
+    }
+
+    .nav > li {
+        float:left;
+    }
+
+    .nav li ul {
+        display:none;
+        position:absolute;
+        min-width:140px;
+    }
+
+    .nav li:hover > ul{
+        display:block;
+    }
+
+    .nav li ul li{
+        position:relative;
+    }
+
+    .nav li ul li ul {
+        right:-140px;
+        top:0px;
+    }
+
+     </style>
+    </head>
+    <body>
+
+        <div id="header">
+            <ul class="nav">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Servicio</a>
+                    <ul>
+                        <li><a href="#">Opcion No.1</a></li>
+                        <li><a href="#">Opcion No.2</a></li>
+                        <li><a href="#">Opcion No.3</a></li>
+                        <li><a href="#">Opcion No.4</a></li>
+                        <li><a href="#">Opcion No.5</a></li>
+                    </ul>
+                </li>
+                  <li><a href="">Pais</a>
+                    <ul>
+                    <li><a href="#">Mexico</a></li>
+                    <li><a href="#">EUA</a></li>
+                    <li><a href="#">Chile</a></li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">China</a></li>
+                </ul>
+                </li>
+                  <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
+</body>
+</html>
